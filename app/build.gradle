@@ -38,7 +38,7 @@ tasks.named('test') {
 
 jar {
     manifest {
-        attributes  "Main-Class": "jp.ac.uryukyu.ie.tnal.App"
+        attributes 'Main-Class': 'Main'
     }
 }
 
