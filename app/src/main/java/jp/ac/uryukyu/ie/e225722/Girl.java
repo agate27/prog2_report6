@@ -108,7 +108,7 @@ public class Girl {
         }else if(madness >= 60 ){
             System.out.println( "---両腕を失ったが、部屋から出ることができた---");
         }else{
-            System.out.println(name + "---無事に部屋から出ることができた！---");
+            System.out.println( "---無事に部屋から出ることができた！---");
         }
     }
 
