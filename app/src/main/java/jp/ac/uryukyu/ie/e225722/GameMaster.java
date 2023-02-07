@@ -32,6 +32,10 @@ public class GameMaster {
             System.out.println("");
             System.out.println(" ⇨ " + (i + 1) +  "日目");
             girl.showStatus();
+
+            //狂気度はPlyerクラスのdice()を使ってランダムに指定します
+            int madness = player.dice();
+            System.out.println("！！！この問題は間違えると狂気度が" + madness +"%上がります。");
             System.out.println(question.getQuiz());
             //回答リストを作成
             List<String> answerList = new ArrayList<String>();
@@ -60,8 +64,6 @@ public class GameMaster {
             }
 
             int happiness = question.getHappyness();
-            //狂気度はPlyerクラスのdice()を使ってランダムに指定します
-            int madness = player.dice();
             girl.observation(judges, madness, happiness);
             //危険度を調べ、tureの場合処理を終わらせます。
             if (girl.isDead()){

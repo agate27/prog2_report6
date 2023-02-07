@@ -21,7 +21,6 @@ public class Player {
      * @return　int 数字
      */
     public int dice(){
-        System.out.println("謎のダイスをふる");
         Random ran = new Random();
         //ランダムに数字を生成
         int number = ran.nextInt(100);
